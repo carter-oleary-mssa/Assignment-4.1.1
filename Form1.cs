@@ -13,7 +13,7 @@ namespace Assignment_4._1._1
         {
             Person person1 = new Person("John", "Smith", "(123)456-7890", "(123)456 - 7890", "101 Main St");
             Person person2 = new Person("Jamie", "Smort", "(123)222-7890", "(123)111 - 7890", "101 Main St");
-            Person person3 = new Person("Damion", "Darkbool", "(111)111-1111", "(222)222-2222", "69 Main St");
+            Person person3 = new Person("Damion", "Darkbool", "(111)111-1111", "(222)222-2222", "1 Main St");
             addressBook.Add(person1.ToString(), person1);
             addressBook.Add(person2.ToString(), person2);
             addressBook.Add(person3.ToString(), person3);
