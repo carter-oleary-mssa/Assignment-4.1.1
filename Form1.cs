@@ -60,6 +60,7 @@ namespace Assignment_4._1._1
                 ResizeColumns();
             }
             catch (Exception ex) { lblError.Text = ex.Message; }
+            ClearAddBoxes();
 
         }
 
@@ -70,14 +71,22 @@ namespace Assignment_4._1._1
             {
                 bs.Remove(addressBook[name]);
                 bool b = addressBook.Remove(name);
-                txtFName.Text = "";
-                txtLName.Text = "";
                 lblError.Text = $"{name} has been deleted from the address book.";
             }
             else
             {
                 lblError.Text = $"Error: {name} does not exist in the address book";
             }
+            ClearAddBoxes();
+        }
+
+        private void ClearAddBoxes()
+        {
+            txtFName.Text = "";
+            txtLName.Text = "";
+            txtMobile.Text = "";
+            txtWork.Text = "";
+            txtAddress.Text = "";
         }
     }
 }
