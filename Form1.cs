@@ -72,7 +72,7 @@ namespace Assignment_4._1._1
                 bool b = addressBook.Remove(name);
                 txtFName.Text = "";
                 txtLName.Text = "";
-                lblError.Text = "";
+                lblError.Text = $"{name} has been deleted from the address book.";
             }
             else
             {
